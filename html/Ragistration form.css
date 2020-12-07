@@ -1,0 +1,101 @@
+*{
+    margin: 2px;
+    padding: 0px;
+}
+.nav{
+
+    background-color: black;
+    height: 30px;
+   padding-top: 7px;
+   display: flex;
+   
+    
+    border-radius: 5px;
+    
+}
+.navbar1{
+
+    align-items:row;
+    
+
+    
+}
+.navbar2{
+    align-self:left;
+
+    flex-direction: row-reverse;
+}
+
+
+input {
+    width: 90%;
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(245, 243, 240);
+   
+}
+a:hover{
+    color: green;
+    background-color:black;
+    border-bottom: 2px blue;
+}
+ul {
+    margin-left: 20px;
+}
+li{
+    display:inline;
+    margin-left: 10px;
+
+   color: red;
+   text-shadow: chartreuse;
+   border-radius: 3px;
+}
+.contener1{
+    font-family: Arial, Helvetica, sans-serif;;
+
+    margin :100px 400px;
+    align-items: center;
+    border: 2px solid red;
+    padding:40px 60px 40px 80px;
+    background-color: rgb(101, 182, 207);
+    width:600px;
+   
+}
+    
+#table1{
+    margin-left: 60px;
+    color: green;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+
+  .p{
+      font-size: 15px;
+  }
+
+td{
+    border: greenyellow;
+}
