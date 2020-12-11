@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragistration Form</title>
+    <title>Ragistration form</title>
 
-    <link rel="stylesheet" href="Ragistration form.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
@@ -24,7 +24,7 @@
         </div>
         <div class="navbar2">
             <ul>
-                <li><a href="C:\Users\belte\Desktop\arun\html\index.html">Ragistration</a></li>
+                <li><a href="Ragistration form.html">Ragistration</a></li>
                 <li><a href="#">Sign Up</a></li>
 
 
@@ -34,87 +34,181 @@
 
     </div>
 
-    <div class="contener1">
-        <form name="myform" mathod="post" onsubmit="return myFunction()">
-            <table id="table1" style="border: red">
-                <tr>
-                    <h1>Ragistration Form</h1>
+    </div>
 
-                    <hr>
-                </tr>
-                <tr>
+    <div class="contener">
 
-                    <td>
-                        <lable>First Name<spam style="color: red;">*</spam>
-                        </lable>
-                    </td>
-                    <td>
-                        <label>Last Name</label><spam style="color: red;">*</spam>
-                    </td>
+        <table class="table1" style="border: red">
+            <tr>
+                <h1>Ragistration form</h1>
+                <p>Please fill in this form to create an account</p>
+                <hr>
+            </tr>
+            <tr>
 
-                </tr>
-                
-                <tr>
-                    <td><input type="text" name="fname" placeholder="Enter first name" required></td>
-                    <td><input type="text" placeholder="Enter first name" required></td>
-                </tr>
+                <td>
+                    <lable>First Name<span style="color: red;">*</span></lable>
 
-                <tr>
-                    <td colspan="2"><label>Email</label></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="email" id="email" placeholder="enter the Email" required></td>
-                </tr>
+                </td>
+                <td>
+                    <label>Last Name<span style="color: red;">*</span></label>
+                </td>
 
-                <tr>
-                    <td>
-                        <lable>Password</lable>
-                    </td>
-                    <td>
-                        <label>Confirm Password</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="password" placeholder="Password (8 characters minmum)" required></td>
-                    <td><input type="password" placeholder="Re-Enter Password" required></td>
-                </tr>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="fname" placeholder="Enter first name" required>
+                    <p id="name1" style="color: red; font-size: 10px;"></p>
+
+                </td>
+
+                <td><input type="text" id="lname" placeholder="Enter Last name">
+                    <p id="name2" style="color: red;font-size: 10px;"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label>Email<span style="color: red;">*</span></label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="email" id="email1" placeholder="john.doe@example.com">
+                    <p id="name3" style="color: red;font-size: 10px;"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <lable>Password<span style="color: red;">*</span></lable>
+                </td>
+                <td>
+                    <label>Confirm Password<span style="color: red;">*</span></label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="password" id="pwd" placeholder="Password (8 characters minmum)">
+                    <p id="name4" style="color: red;font-size: 10px;"></p>
+                </td>
+                <td><input type="password" id="cpwd" placeholder="Re-Enter Password">
+                    <p id="name5" style="color: red;font-size: 10px;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td> <input type="radio" class="gender" name="gender" value="male"></td>
+                            <td><label for="male">Male</label></td>
+                            <td> <input type="radio" class="gender" name="gender" value="female"></td>
+                            <td> <label for="female">Female</label></td>
+                        </tr>
+                    </table>
+                 </tr>
+            </td>
+
+            <tr>
+                <td><b>Hobbies</b></td>
+            </tr>
 
 
-                <tr>
-                    <td><label>Gender</label></td>
-                    <td><label>Hobbies</label></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <th>
-                        <table>
+            <td>
+                <table>
+                    <tr>
+                        <td> <input type="checkbox" name="Hobbies" value="Music"></td>
+                           <td> <label for="Hobbies">Music</label></td>
+                           <td><input type="checkbox" name="vehicle2" value="Dance"></td>
+                            <td><label for="Hobbies">Dance</label></td>
+                             <td><input type="checkbox" name="vehicle3" value="Movies" ></td>
+                                <td><label for="Hobbies">Movies</label></td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
 
-                            
-                            <tr></tr>
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1"> I have a bike</label>
-                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                        <label for="vehicle2"> I have a car</label>
-                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                        <label for="vehicle3"> I have a boat</label>
-                        </table>
-                    </th>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <p class="p">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms
-                                & Privacy</a>.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <th colspan="2"><button type="submit" class="signupbtn" value="Submit"><a herf="index.html">Sign
-                                Up</a></button></th>
-                </tr>
-            </table>
 
-        </form>
+            <tr>
+                <td colspan="2">
+                    <p class="p1">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms
+                            & Privacy</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <!-- <button onclick="myFunction()">submit</button> -->
+                <th colspan="2"><button type="submit" class="signupbtn" value="register"
+                        onclick=" return myFunction()">Sign
+                        Up</button></th>
+            </tr>
+        </table>
+
+
 
     </div>
+
+    <div id="Result">
+        <table class="table2" style="border: red">
+            <tr>
+                <h1>Result of Sign Up Page</h1>
+                <p>Congratulations you are succesfully signup Your details about:-</p>
+                <hr>
+            </tr>
+            <tr>
+
+                <td>
+                    <lable>First Name</lable>
+
+                </td>
+                <td>
+                    <label>Last Name</label>
+                </td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="p1"></p>
+                </td>
+
+                <td>
+                    <p id="p2"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label>Email</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="p3"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <lable>Password</lable>
+                </td>
+                <td>
+                    <label>Confirm Password</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="p4"></p>
+                </td>
+                <td>
+                    <p id="p5"></p>
+                </td>
+            </tr>
+
+        </table>
+
+
+
+    </div>
+
     <script src="index_js.js"></script>
 </body>
 
