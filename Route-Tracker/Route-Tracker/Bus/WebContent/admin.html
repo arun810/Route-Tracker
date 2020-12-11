@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AdminPage</title>
+<style>
+body{
+	margin:0px;
+	background: url(image/cctv.jpg);
+	background-size: cover;
+}
+#form{
+	width:550px;
+	margin:auto;
+	margin-top:80px;
+	background:linear-gradient(40deg,white,black);
+	font-size:25px;
+	text-align:center;
+	padding:30px;
+	border-radius:30px;
+	color:blue;
+	box-shadow:0 0 20px white;
+}
+table { border: 0; }
+        table td { padding: 10px; }
+input{
+	margin-bottom:30px;
+}
+.btn_submit{
+	border:none;
+	background:linear-gradient(50deg,skyblue,blue);
+	padding:10px 40px;
+	border-radius:30px;
+}
+.btn_submit:hover{
+	box-shadow:0 0 20px white;
+}
+</style>
+</head>
+<body>
+<form action="admin" method="post">
+<div id="form">
+<table>
+<tr>
+<td>Name :</td> 
+<td><input type="text" id="name" name="name" size=30 autofocus required placeholder="Enter Name">
+</td></tr>
+<tr>
+<td>Password :</td> 
+<td><input type="password" id="upass" name="upass" size=30 autofocus required placeholder="Enter Password">
+</td></tr>
+<tr>
+<td><input type="submit" value="Enter" class="btn_submit"></td>
+<td><input type="reset" value="Reset" class="btn_submit"></td>
+<td><input type="submit" value="Back" onclick="history.back()" class="btn_submit"></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
